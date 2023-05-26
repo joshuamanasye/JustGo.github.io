@@ -185,7 +185,8 @@ main.darken {
 
 #slider-gradient {
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)); */
+    background-image: linear-gradient(to bottom, rgba(11, 80, 84, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
     padding-left: 15%;
     display: flex;
     align-items: center;
@@ -264,6 +265,32 @@ main.darken {
 
 .slider-content-text p {
     font-weight: 200;
+}
+
+@media screen and (max-width: 1000px) {
+    #slider-text {
+        font-size: 1.2rem;
+    }
+    
+    #slider-text p {
+        font-size: 1.1rem;
+    }
+
+    #slider-gradient {
+        padding-left: 3rem;
+    }
+
+    .slider-content {
+        height: 300px;
+    }
+
+    .slider-content-text {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
 }
 
 /* BADGES */
