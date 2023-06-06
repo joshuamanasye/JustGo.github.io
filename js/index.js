@@ -18,9 +18,9 @@ function parallax(e) {
     bg4.style.width = 100 + window.scrollY/20 + '%';
     bg4.style.left = '-' + window.scrollY/40 + '%'
 
-    welcomeText = document.getElementById('welcome-text-container');
-    welcomeText.style.top = 100 + window.scrollY  + 'px';
-    welcomeText.style.left = '-' + window.scrollY/30 + '%';
+    // welcomeText = document.getElementById('welcome-text-container');
+    // welcomeText.style.top = 100 + window.scrollY  + 'px';
+    // welcomeText.style.left = '-' + window.scrollY/30 + '%';
 }
 
 function scrollNav() {
