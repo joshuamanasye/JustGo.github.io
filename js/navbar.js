@@ -82,7 +82,7 @@ window.onclick = function(event) { // close dropdown & sidebar kalau klik di lua
     });
 
     if (!sideBar.contains(event.target) && !nav.contains(event.target) && event.target !== sideBar) closeSideBar();
-    console.log(!sideBar.contains(event.target));
-    console.log(!nav.contains(event.target));
-    console.log(event.target !== sideBar);
+    // console.log(!sideBar.contains(event.target));
+    // console.log(!nav.contains(event.target));
+    // console.log(event.target !== sideBar);
 }
