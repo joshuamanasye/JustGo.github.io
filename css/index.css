@@ -199,7 +199,6 @@ main.darken {
 }
 
 #slider-container {
-    padding: 0 2rem;
     width: 100%;
     /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)); */
     background-image: linear-gradient(to bottom, rgba(11, 80, 84, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
@@ -224,21 +223,22 @@ main.darken {
 }
 
 #carousel-wrapper {
-    /* height: 520px; */
-    margin-left: 20%;
+    height: 460px;
+    width: 100%;
+    margin-left: 10%;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
-    max-width: 70%;
+    overflow: hidden;
+    padding-left: 15px;
+    /* max-width: 59%; */
     position: relative;
 }
 
 #carousel {
-    /* height: 520px; */
-    /* width: 320px; */
     display: flex;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    position: absolute;
     /* align-items: center; */
 }
 
@@ -250,7 +250,7 @@ main.darken {
     width: calc(5/7 * 440px + 47.5px);
     position: absolute;
     top: 200px;
-    left: -10px;
+    left: 5px;
     transition: 0.4s;
 }
 
@@ -263,6 +263,7 @@ main.darken {
     padding: 0.5rem;
     transition: 0.2s;
     user-select: none;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
 }
 
 .carousel-arrow:hover {
@@ -278,6 +279,7 @@ main.darken {
     border-radius: 5px;
     transition: 0.4s;
     cursor: pointer;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
 }
 
 .slider-content:hover {
@@ -330,11 +332,15 @@ main.darken {
     font-weight: 200;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1280px) {
+    #carousel-wrapper {
+        height: 360px;
+    }
+
     #carousel-arrow-container {
         width: calc(5/7 * 330px + 47.5px);
         top: 165px;
-        left: -5px;
+        left: 10px;
     }
 
     #slider-text {
@@ -374,12 +380,12 @@ main.darken {
     }
 
     #carousel-wrapper {
-        margin: 0;
+        margin: 0 0 5% 0;
         padding: 0;
         max-width: 100%;
-        overflow: scroll;
-        white-space: nowrap;
-        scroll-behavior: smooth;
+        align-items: center;
+        height: calc(100vw + 160px);
+        width: calc(1.4 * (140vw + 40px)); /* maksa awoawok */
     }
 
     #slider-text {
@@ -390,22 +396,22 @@ main.darken {
     
     #carousel {
         margin-top: 120px;
+        margin-left: 30%;
         height: auto;
-        width: 80%;
-        overflow: scroll;
-        white-space: nowrap;
-        scroll-behavior: smooth;
+        width: 100%;
     }
     
     .slider-content {
         height: 80vw !important;
-        margin: 10%;
+        margin: 5%;
     }
 
     #carousel-arrow-container {
-        margin: 1rem 0 3rem 0;
-        width: 200px;
-        position: relative;
+        /* margin: 1rem 0 3rem 0; */
+        max-width: 200px;
+        position: absolute;
+        left: calc(50% - 100px);
         top: auto;
+        bottom: 0;
     }
 }

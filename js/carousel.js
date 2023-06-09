@@ -39,3 +39,5 @@ $('html').keyup(function (e) {
     if (e.keyCode == 37) scrollLeft();
     if (e.keyCode == 39) scrollRight();
 });
+
+// carousel.style.left = -200 + 'px';
