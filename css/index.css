@@ -242,6 +242,7 @@ main.darken {
     left: 15px;
     transition: ease 0.4s;
     /* align-items: center; */
+    overflow: visible;
 }
 
 #carousel-arrow-container {
@@ -398,7 +399,7 @@ main.darken {
     
     #carousel {
         margin-top: 120px;
-        margin-left: calc(30% - 15px);
+        margin-left: calc(17% - 17.5px);
         height: auto;
         width: 100%;
     }
