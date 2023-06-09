@@ -291,6 +291,7 @@ main.darken {
 
 .active-slider {
     transform: scale(1.1);
+    pointer-events: none;
 }
 
 .active-slider:hover {

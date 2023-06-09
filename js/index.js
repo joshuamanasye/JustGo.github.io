@@ -23,6 +23,7 @@ function parallax(e) {
     // welcomeText.style.left = '-' + window.scrollY/30 + '%';
 }
 
+// nav awalnya transparan, kalo discroll jd ad background
 function scrollNav() {
     nav = document.getElementById('nav');
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {

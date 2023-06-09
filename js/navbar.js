@@ -1,6 +1,7 @@
 var dropdowns = document.getElementsByClassName('dropdown-menu');
 
 function openDropdown(dropdown) {
+    // kalo dropdown gk punya dropdown-content, brarti itu dari sidebar
     var content = dropdown.querySelector('.dropdown-content');
     if (content == null) content = dropdown.querySelector('.sidebar-dropdown-content');
     var arrow = dropdown.querySelector('.dropdown-icon');
@@ -11,6 +12,7 @@ function openDropdown(dropdown) {
 }
 
 function closeDropdown(dropdown) {
+    // kalo dropdown gk punya dropdown-content, brarti itu dari sidebar
     var content = dropdown.querySelector('.dropdown-content');
     if (content == null) content = dropdown.querySelector('.sidebar-dropdown-content');
     var arrow = dropdown.querySelector('.dropdown-icon');
@@ -20,8 +22,9 @@ function closeDropdown(dropdown) {
 }
 
 function toggleDropdown(dropdown) {
+    // kalo dropdown gk punya dropdown-content, brarti itu dari sidebar
     var content = dropdown.querySelector('.dropdown-content');
-    if (content === null) content = dropdown.querySelector('.sidebar-dropdown-content');
+    if (content == null) content = dropdown.querySelector('.sidebar-dropdown-content');
 
     if (!content.classList.contains('show')) openDropdown(dropdown);
     else closeDropdown(dropdown);
@@ -67,6 +70,7 @@ function toggleMenu() {
 
 hamburgerBtn.addEventListener('click', toggleMenu);
 
+// kalau dari kecil diresize jd gede, tutup sidebar
 window.onresize = (event) => {
     if ($(window).width() > 800) {
         closeSideBar();
