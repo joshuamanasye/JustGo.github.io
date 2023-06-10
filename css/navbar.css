@@ -88,13 +88,15 @@ nav .current:hover {
     transition: 0.2s;
 }
 
-.dropdown-menu:hover {
+.dropdown-menu:hover label {
     transform: scale(1.02);
+    color: #3b474f;
 }
 
 .dropdown-menu label {
     display: flex;
     flex-wrap: nowrap;
+    transition: 0.2s;
 }
 
 .dropdown-menu label:hover {

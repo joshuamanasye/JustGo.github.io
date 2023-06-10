@@ -309,7 +309,6 @@ main.darken {
 }
 
 .carousel-arrow:hover {
-    scale: 1.1;
     background-color: #1d757d;
 }
 
