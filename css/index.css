@@ -54,37 +54,28 @@ section {
 
 @-webkit-keyframes breathing {
 	0% {
-		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
 
 	50% {
-		-webkit-transform: scale(0.9);
 		transform: scale(0.9);
 	}
 
 	100% {
-		-webkit-transform: scale(1);
 		transform: scale(1);
 	}
 }
   
 @keyframes breathing {
 	0% {
-		-webkit-transform: scale(1);
-		-ms-transform: scale(1);
 		transform: scale(1);
 	}
 
 	50% {
-		-webkit-transform: scale(0.9);
-		-ms-transform: scale(0.9);
 		transform: scale(0.9);
 	}
 
 	100% {
-		-webkit-transform: scale(1);
-		-ms-transform: scale(1);
 		transform: scale(1);
 	}
 }
@@ -113,8 +104,36 @@ main.darken {
     top: 100px;
 	display: flex;
 	padding: 0 4rem;
-    transition: 0.2s;
 }
+
+/* #welcome-desc-container {
+    position: absolute;
+    max-width: 360px;
+    padding: 25px;
+    top: 360px;
+    right: 100px;
+	display: flex;
+    font-weight: bold;
+    background-color: #fff;
+    font-size: 1.2rem;
+    border-radius: 10px 60px;
+    text-align: center;
+    box-shadow: 4px 4px 0px 0px #0b5054;
+    transition: 0.6s;
+}
+
+#welcome-desc-container p {
+    text-decoration: none;
+    color: #000;
+}
+
+#welcome-desc-container p:visited {
+    color: #000;
+}
+
+#welcome-desc-container:hover {
+    transform: scale(1.02);
+} */
 
 .home-bg {
     bottom: 0;
@@ -148,10 +167,22 @@ main.darken {
 }
 
 .welcome-text h6 {
-    font-size: 2.5rem;
+    max-width: 600px;
+    font-size: 2.4rem;
 }
 
+/* .welcome-text p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    color: #1d757d;
+} */
+
 @media screen and (max-width: 700px) {
+    .welcome {
+        height: 600px;
+    }
+
     #welcome-text-container {
         padding: 0 2rem;
     }
@@ -161,12 +192,19 @@ main.darken {
     }
 
     .welcome-text h6 {
-        font-size: 1.5rem;
+        max-width: 280px;
+        font-size: 1.2rem;
     }
 
-    .welcome {
-        height: 500px;
-    }
+    /* #welcome-desc-container {
+        top: 280px;
+        right: 20px;
+        padding: 20px;
+        border-radius: 8px 48px;
+        font-size: 1rem;
+        width: 240px;
+        max-width: 90%;
+    } */
 }
 
 #welcome-text-container h6 {
@@ -175,6 +213,7 @@ main.darken {
 
 .green-text {
 	color: #1d757d;
+    white-space: nowrap;
 }
 
 .content {
@@ -282,7 +321,7 @@ main.darken {
     border-radius: 5px;
     transition: ease 0.4s;
     cursor: pointer;
-    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    box-shadow: 4px 4px 0px 0px #f5c07f;
 }
 
 .slider-content:hover {

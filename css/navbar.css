@@ -31,7 +31,7 @@ nav a, .sidebar a {
     flex-wrap: nowrap;
     color: #767a7c;
     text-decoration: none;
-    transition: transform .2s;
+    transition: 0.2s;
 }
 
 nav a:hover, .sidebar a:hover {
@@ -76,6 +76,7 @@ nav .current:hover {
 
 .nav-item {
     padding: 0 20px;
+    transition: 0.2s;
 }
 
 .dropdown-menu {
@@ -84,7 +85,11 @@ nav .current:hover {
     flex-direction: column;
     color: #767a7c;
     text-decoration: none;
-    transition: transform .2s;
+    transition: 0.2s;
+}
+
+.dropdown-menu:hover {
+    transform: scale(1.02);
 }
 
 .dropdown-menu label {
@@ -109,13 +114,14 @@ nav .current:hover {
     position: absolute;
     margin-top: 60px;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-    transition: 0.2s;
+    transition: 0.4s; /* INI KNP GK WORK YAOLOH */
     opacity: 0;
     transform: translateY(-20px);
     z-index: 2;
 }
 
 .dropdown-content.show {
+    transition: 0.4s; /* INI KNP GK WORK YAOLOH */
     display: block;
     opacity: 1;
     transform: translateY(0);
@@ -137,7 +143,7 @@ nav .current:hover {
     border-radius: 4px;
     padding: 5px 30px 5px 10px;
     margin: 2px 0;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .dropdown-content a:hover {
@@ -159,15 +165,36 @@ nav .current:hover {
     z-index: 3;
     cursor: pointer;
     display: none;
-    transition: all 0.4s ease-out;
+    transition: 0.4s ease;
 }
 
 .hamburger-btn .btn-line {
     width: 28px;
     height: 3px;
+    border-radius: 1.5px;
     margin: 0 0 5px 0;
     background: #374d5c;
-    transition: all 0.4s ease-out;
+    transition: all 0.4s ease;
+}
+
+.hamburger-btn .btn-line:nth-child(1) {
+    margin-left: 4px;
+    width: 24px;
+}
+
+.hamburger-btn .btn-line:nth-child(2) {
+    margin-left: 10px;
+    width: 18px;
+}
+
+.hamburger-btn:hover .btn-line:nth-child(1) {
+    margin-left: 0;
+    width: 28px;
+}
+
+.hamburger-btn:hover .btn-line:nth-child(2) {
+    margin-left: 0;
+    width: 28px;
 }
 
 .hamburger-btn.close {
@@ -175,6 +202,8 @@ nav .current:hover {
 }
 
 .hamburger-btn.close .btn-line:nth-child(1) {
+    width: 28px;
+    margin-left: 0;
     transform: rotate(45deg) translate(11px, 9px);
 }
 
@@ -213,13 +242,13 @@ nav .current:hover {
     letter-spacing: 0.1rem;
     margin-top: 10px;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-    transition: 0.2s;
+    transition: 0.4s;
     opacity: 0;
     transform: translateY(-20px);
     z-index: 2;
 }
 
-/* arrow */
+/* arrow di menu dropdownnya yg bikin kyk dialog box */
 .sidebar-dropdown-content:after { 
     content: " ";
     position: absolute;
@@ -265,6 +294,10 @@ nav .current:hover {
 
     .hamburger-btn {
         display: block;
+    }
+
+    .nav-item {
+        padding: 8px 5%;
     }
 }
 
