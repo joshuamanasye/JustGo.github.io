@@ -321,7 +321,7 @@ main.darken {
     height: 400px;
     background-size: cover;
     border-radius: 5px;
-    transition: ease 0.4s;
+    transition: 0.4s ease;
     cursor: pointer;
     box-shadow: 4px 4px 0px 0px #f5c07f;
 }

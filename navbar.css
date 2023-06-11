@@ -184,9 +184,9 @@ nav .current:hover {
     width: 24px;
 }
 
-.hamburger-btn .btn-line:nth-child(2) {
-    margin-left: 10px;
-    width: 18px;
+.hamburger-btn .btn-line:nth-child(3) {
+    margin-left: 12px;
+    width: 16px;
 }
 
 .hamburger-btn:hover .btn-line:nth-child(1) {
@@ -194,7 +194,7 @@ nav .current:hover {
     width: 28px;
 }
 
-.hamburger-btn:hover .btn-line:nth-child(2) {
+.hamburger-btn:hover .btn-line:nth-child(3) {
     margin-left: 0;
     width: 28px;
 }
@@ -204,8 +204,8 @@ nav .current:hover {
 }
 
 .hamburger-btn.close .btn-line:nth-child(1) {
-    width: 28px;
     margin-left: 0;
+    width: 28px;
     transform: rotate(45deg) translate(11px, 9px);
 }
 
@@ -214,6 +214,8 @@ nav .current:hover {
 }
 
 .hamburger-btn.close .btn-line:nth-child(3) {
+    margin-left: 0;
+    width: 28px;
     transform: rotate(-45deg) translate(2px, 0px);
 }
 

@@ -117,19 +117,6 @@ function scrollRight() {
     }
 }
 
-// klik di slidenya
-slides.click(function() {
-    // console.log(slides.index(this));
-    
-    var target = slides.index(this);
-    
-    if (target <= current) return; // just in case
-
-    while (current < target) {
-        scrollRight();
-    }
-})
-
 // init display slide
 function initSlides() {
     // hide semua yg di kanan lebih dr 2 index
@@ -139,24 +126,38 @@ function initSlides() {
     }
 }
 
-// initSlides();
-
-// carousel control
-$('#arrow-left').click(scrollLeft);
-$('#arrow-right').click(scrollRight);
-
-$('html').keyup(function (e) { 
-    if (e.keyCode == 37) scrollLeft(); // left arrow
-    if (e.keyCode == 39) scrollRight(); // right arrow
-});
-
-// benerin abis resize window
-$(window).on('resize', function() {
-    setTimeout(scrollCarousel, 400); // setTimeout biarin animasinya yg lain kelar dulu
-});
-
 function setListener() {
+    // carousel control
+    $('#arrow-left').click(scrollLeft);
+    $('#arrow-right').click(scrollRight);
 
+    $('html').keyup(function (e) { 
+        if (e.keyCode == 37) scrollLeft(); // left arrow
+        if (e.keyCode == 39) scrollRight(); // right arrow
+    });
+    
+    // klik di slidenya
+    slides.click(function() {
+        // console.log(slides.index(this));
+        
+        var target = slides.index(this);
+        
+        if (target > current) {
+            while (current < target) {
+                scrollRight();
+            }
+        }
+        else if (target < current) {
+            while (current > target) {
+                scrollLeft();
+            }
+        }
+    })
+
+    // benerin abis resize window
+    $(window).on('resize', function() {
+        setTimeout(scrollCarousel, 400); // setTimeout biarin animasinya yg lain kelar dulu
+    });
 }
 
 fetch("./js/slider-content.json").then((res) => {
