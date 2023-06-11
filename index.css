@@ -341,23 +341,23 @@ main.darken {
 }
 
 .slider-content:nth-child(1) {
-    background-image: url('../assets/slider/1.jpg');
+    background-image: url('./assets/slider/1.jpg');
 }
 
 .slider-content:nth-child(2) {
-    background-image: url('../assets/slider/2.jpg');
+    background-image: url('./assets/slider/2.jpg');
 }
 
 .slider-content:nth-child(3) {
-    background-image: url('../assets/slider/3.jpg');
+    background-image: url('./assets/slider/3.jpg');
 }
 
 .slider-content:nth-child(4) {
-    background-image: url('../assets/slider/4.jpg');
+    background-image: url('./assets/slider/4.jpg');
 }
 
 .slider-content:nth-child(5) {
-    background-image: url('../assets/slider/5.jpg');
+    background-image: url('./assets/slider/5.jpg');
 }
 
 .slider-content-text {
