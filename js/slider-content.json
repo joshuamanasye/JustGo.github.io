@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Great Ocean Road",
+    "location": "Australia",
+    "desc": "A mesmerizing coastal drive unveiling stunning cliffs, golden beaches, and iconic landmarks along Australia's southeastern coast.",
+    "imgUrl": "../assets/slider/1.jpg"
+  },
+  {
+    "name": "Machu Picchu",
+    "location": "Peru",
+    "desc": "A mystical Incan citadel in the Andes, boasting awe-inspiring ruins and breathtaking mountain views.",
+    "imgUrl": "../assets/slider/2.jpg"
+  },
+  {
+    "name": "Gros Piton",
+    "location": "St. Lucia",
+    "desc": "A majestic mountain peak in Saint Lucia, rising dramatically from the Caribbean Sea, showcasing stunning natural beauty and providing a challenging yet rewarding hiking experience.",
+    "imgUrl": "../assets/slider/3.jpg"
+  },
+  {
+    "name": "Bora Bora",
+    "location": "French Polynesia",
+    "desc": "A tropical paradise known for its pristine turquoise waters, white sandy beaches, and overwater bungalows, offering a dream-like setting for relaxation and indulgence.",
+    "imgUrl": "../assets/slider/4.jpg"
+  },
+  {
+    "name": "Oia",
+    "location": "Greece",
+    "desc": "Santorini's enchanting cliffside village, famous for its captivating sunsets, iconic blue-domed churches, and whitewashed architecture, creating a mesmerizing scene overlooking the azure Aegean Sea.",
+    "imgUrl": "../assets/slider/5.jpg"
+  }
+]

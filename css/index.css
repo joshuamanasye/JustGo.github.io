@@ -233,20 +233,23 @@ main.darken {
     display: flex;
     height: 900px;
     background-image: url('../assets/slider/1.jpg');
-    background-size: cover;
+    /* background-size: cover; */
     background-repeat: no-repeat;
+    background-size: auto 150%;
+    transition: background-position 0.4s ease-out;
 }
 
 #slider-container {
     width: 100%;
-    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)); */
     background-image: linear-gradient(to bottom, rgba(11, 80, 84, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1));
+    /* background-image: linear-gradient(to bottom, rgba(11, 80, 84, 1), rgba(251, 224, 194, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(251, 224, 194, 1)); */
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
 }
 
 #slider-text {
+    height: 16rem;
     margin-left: 5%;
     width: 30%;
     font-size: 1.4rem;
@@ -368,6 +371,7 @@ main.darken {
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
     border-radius: 5px;
     user-select: none;
+    transition: 0.4s ease-out;
 }
 
 .slider-content-text p {
