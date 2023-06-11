@@ -126,11 +126,31 @@ function initSlides() {
     }
 }
 
+// arrow mouse down ganti warna biar keren
+function arrowMouseDownEffect() {
+    $('#arrow-left').on('mousedown', ()=> {
+        $('#arrow-left').css('background-color', '#1d757d');
+    });
+    $('#arrow-left').on('mouseup', ()=> {
+        $('#arrow-left').css('background-color', '#87bcba');
+    });
+
+    $('#arrow-right').on('mousedown', ()=> {
+        $('#arrow-right').css('background-color', '#1d757d');
+    });
+    $('#arrow-right').on('mouseup', ()=> {
+        $('#arrow-right').css('background-color', '#87bcba');
+    });
+}
+
 function setListener() {
-    // carousel control
+    arrowMouseDownEffect();
+
+    // carousel click control
     $('#arrow-left').click(scrollLeft);
     $('#arrow-right').click(scrollRight);
 
+    // carousel arrow control
     $('html').keyup(function (e) { 
         if (e.keyCode == 37) scrollLeft(); // left arrow
         if (e.keyCode == 39) scrollRight(); // right arrow
@@ -154,12 +174,13 @@ function setListener() {
         }
     })
 
-    // benerin abis resize window
+    // benerin carousel abis resize window
     $(window).on('resize', function() {
         setTimeout(scrollCarousel, 400); // setTimeout biarin animasinya yg lain kelar dulu
     });
 }
 
+// pengen maki-maki kelompok gw di komen js
 fetch("./js/slider-content.json").then((res) => {
     return res.json();
 }).then((data) => {

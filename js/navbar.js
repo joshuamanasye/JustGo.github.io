@@ -30,7 +30,9 @@ function toggleDropdown(dropdown) {
     else closeDropdown(dropdown);
 }
 
+// kasih event listener ke semua dropdown, harusnya pake jquery lbh gmpng tp gw mls ganti" lg
 Array.from(dropdowns).forEach(function(dropdown) {
+    // klompok gw, gw suruh tulis nama di tembagian tugas aj kgk ad respon
     dropdown.addEventListener('click', function() {
         toggleDropdown(dropdown);
     });
@@ -60,6 +62,7 @@ function closeSideBar() {
 }
 
 function toggleMenu() {
+    // buanglah sampah pada tempatnya, eh ad d kelompok gw
     if (!sideBarOpened) {
         showSideBar();
     }
@@ -79,7 +82,8 @@ window.onresize = (event) => {
 
 nav = document.querySelector('nav');
 
-window.onclick = function(event) { // close dropdown & sidebar kalau klik di luar
+// close dropdown & sidebar kalau klik di luar, ngetik sendiri, bkn nyolong, apalagi dibantuin kelompok awkoawko
+window.onclick = function(event) {
     // console.log(event.target);
     Array.from(dropdowns).forEach(function(dropdown) {
         if (!dropdown.contains(event.target)) closeDropdown(dropdown);
