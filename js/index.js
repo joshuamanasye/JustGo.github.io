@@ -160,7 +160,7 @@ window.onload = function() {
 let reviewContainer = $('#review-container');
 reviewContainer.bind("DOMMouseScroll mousewheel", function (event) {
     var oEvent = event.originalEvent;
-    console.log(oEvent.detail);
+    // console.log(oEvent.detail);
     var scroll = oEvent.detail;
     var position = reviewContainer.scrollLeft();
 
