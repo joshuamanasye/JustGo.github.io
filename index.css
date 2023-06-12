@@ -512,7 +512,7 @@ main.darken {
 
 @media screen and (max-width: 800px) {
     #review {
-        /* height: 480px; */
+        height: 480px;
     }
 
     .review-card {
