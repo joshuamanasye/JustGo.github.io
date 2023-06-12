@@ -170,6 +170,11 @@ main.darken {
     white-space: nowrap;
 }
 
+.orange-text {
+	color: #e18616;
+    white-space: nowrap;
+}
+
 .content {
     background-color: #fff;
 }
@@ -414,7 +419,7 @@ main.darken {
 }
 
 #review {
-    height: 800px;
+    height: 520px;
     display: flex;
     justify-content: center;
     background: linear-gradient(150deg, #f7d6b1 0%, #f7d6b1 40%, transparent 40%);
@@ -442,17 +447,82 @@ main.darken {
     font-size: 3rem;
     text-align: center;
     letter-spacing: 0.1rem;
+    color: #374d5c;
 }
 
 #review-container {
-    height: 440px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: auto;
+    scrollbar-color: #767a7c #f9f9f9;
+    /* scroll-behavior: smooth; */
+    cursor: grab;
+}
+
+#review-container:active {
+    cursor: grabbing;
+}
+
+.review-card {
+    user-select: none;
+    flex: 0 0 auto;
+    width: 30vw;
+    min-width: 260px;
+    padding: 20px;
     margin: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.review-header {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.review-header h3 {
+    margin-left: 20px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #e18616;
+}
+
+.review-photo {
+    height: 4rem;
+    width: 4rem;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.review-text {
+    font-size: 1.2rem;
+    color: #767a7c;
+}
+
+@media screen and (max-width: 1000px) {
+    .review-card {
+        width: 40vw;
+    }
 }
 
 @media screen and (max-width: 800px) {
+    .review-card {
+        width: 60vw;
+    }
+
     #review-subtitle h2 {
         max-width: 80%;
         font-size: 1.8rem;
         letter-spacing: 0;
     }
+
+    .review-text {
+        font-size: 1rem;
+    }
 }
+

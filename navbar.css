@@ -90,7 +90,7 @@ nav .current:hover {
 
 .dropdown-menu:hover label {
     transform: scale(1.02);
-    color: #3b474f;
+    color: #374d5c;
 }
 
 .dropdown-menu label {
