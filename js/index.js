@@ -132,10 +132,6 @@ function reviewGrabListener() {
     reviewContainer.addEventListener("mouseup", endDrag);
     reviewContainer.addEventListener("mouseleave", endDrag);
     reviewContainer.addEventListener("mousemove", drag);
-    
-    reviewContainer.addEventListener("touchstart", startDrag);
-    reviewContainer.addEventListener("touchend", endDrag);
-    reviewContainer.addEventListener("touchmove", drag);
 }
 
 window.onload = function() {

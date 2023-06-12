@@ -422,7 +422,7 @@ main.darken {
     height: 520px;
     display: flex;
     justify-content: center;
-    background: linear-gradient(150deg, #f7d6b1 0%, #f7d6b1 40%, transparent 40%);
+    background: linear-gradient(120deg, #f7d6b1 0%, #f7d6b1 40%, transparent 40%);
 }
 
 #review-wrapper {
@@ -511,6 +511,10 @@ main.darken {
 }
 
 @media screen and (max-width: 800px) {
+    #review {
+        /* height: 480px; */
+    }
+
     .review-card {
         width: 60vw;
     }
