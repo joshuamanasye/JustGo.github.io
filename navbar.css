@@ -30,18 +30,16 @@ nav a, .sidebar a {
     transition: 0.2s;
 }
 
-@media (hover: hover) and (pointer: fine) {
-    nav a:hover, .sidebar a:hover {
-        text-decoration: none;
-        transform: scale(1.02);
-        color: #374d5c;
-    }
+nav a:hover, .sidebar a:hover {
+    text-decoration: none;
+    transform: scale(1.02);
+    color: #454a4e;
+}
 
-    nav .current:hover {
-        transform: none;
-        cursor: default;
-        color: #3b474f;
-    }
+nav .current:hover {
+    transform: none;
+    cursor: default;
+    color: #454a4e;
 }
 
 nav p, .sidebar p {
@@ -88,7 +86,7 @@ nav .current {
 
 .dropdown-menu:hover label {
     transform: scale(1.02);
-    color: #374d5c;
+    color: #454a4e;
 }
 
 .dropdown-menu label {
@@ -101,7 +99,7 @@ nav .current {
     cursor: pointer;
     text-decoration: none;
     transform: scale(1.02);
-    color: #374d5c;
+    color: #454a4e;
 }
 
 .dropdown-content {
@@ -146,13 +144,11 @@ nav .current {
     transition: 0.4s;
 }
 
-@media (hover: hover) and (pointer: fine) {
-    .dropdown-content a:hover {
-        text-decoration: none;
-        transform: none;
-        color: #fff;
-        background-color: #6ba19f;
-    }
+.dropdown-content a:hover {
+    text-decoration: none;
+    transform: none;
+    color: #fff;
+    background-color: #6ba19f;
 }
 
 .dropdown-icon {
@@ -175,7 +171,7 @@ nav .current {
     height: 3px;
     border-radius: 1.5px;
     margin: 0 0 5px 0;
-    background: #374d5c;
+    background: #454a4e;
     transition: all 0.4s ease;
 }
 
@@ -189,16 +185,14 @@ nav .current {
     width: 16px;
 }
 
-@media (hover: hover) and (pointer: fine) {
-    .hamburger-btn:hover .btn-line:nth-child(1) {
-        margin-left: 0;
-        width: 28px;
-    }
-    
-    .hamburger-btn:hover .btn-line:nth-child(3) {
-        margin-left: 0;
-        width: 28px;
-    }
+.hamburger-btn:hover .btn-line:nth-child(1) {
+    margin-left: 0;
+    width: 28px;
+}
+
+.hamburger-btn:hover .btn-line:nth-child(3) {
+    margin-left: 0;
+    width: 28px;
 }
 
 .hamburger-btn.close {
