@@ -4,43 +4,6 @@ var slides = $('.slider-content');
 var carousel = $('#carousel');
 var content = null;
 
-// let content = [
-//     {
-//         name: 'Great Ocean Road',
-//         location: 'Australia',
-//         desc: "A mesmerizing coastal drive unveiling stunning cliffs, golden beaches, and iconic landmarks along Australia's southeastern coast.",
-//         imgUrl: '../assets/slider/1.jpg'
-//     },
-
-//     {
-//         name: 'Machu Picchu',
-//         location: 'Peru',
-//         desc: "A mystical Incan citadel in the Andes, boasting awe-inspiring ruins and breathtaking mountain views.",
-//         imgUrl: '../assets/slider/2.jpg'
-//     },
-
-//     {
-//         name: 'Gros Piton',
-//         location: 'St. Lucia',
-//         desc: "A majestic mountain peak in Saint Lucia, rising dramatically from the Caribbean Sea, showcasing stunning natural beauty and providing a challenging yet rewarding hiking experience.",
-//         imgUrl: '../assets/slider/3.jpg'
-//     },
-
-//     {
-//         name: 'Bora Bora',
-//         location: 'French Polynesia',
-//         desc: "A tropical paradise known for its pristine turquoise waters, white sandy beaches, and overwater bungalows, offering a dream-like setting for relaxation and indulgence.",
-//         imgUrl: '../assets/slider/4.jpg'
-//     },
-
-//     {
-//         name: 'Oia',
-//         location: 'Greece',
-//         desc: "Santorini's enchanting cliffside village, famous for its captivating sunsets, iconic blue-domed churches, and whitewashed architecture, creating a mesmerizing scene overlooking the azure Aegean Sea.",
-//         imgUrl: '../assets/slider/5.jpg'
-//     }
-// ];
-
 // console.log(carousel);
 // console.log(slides);
 
@@ -58,15 +21,16 @@ function scrollCarousel() {
 function changeCarouselDetail() {
     imageSliderContainer.css('background-position-x', 25 * current + '%');
 
-    setTimeout(function() {
+    setTimeout(()=> {
         imageSliderContainer.css('background-image', 'url(' + content[current].imgUrl + ')');
-    
+
+        $('#slider-text > h2').hide();
+        $('#slider-text > p').hide();
         $('#slider-text > h2').html(content[current].name);
         $('#slider-text > p').html(content[current].desc);
+        $('#slider-text > h2').fadeIn(300);
+        $('#slider-text > p').fadeIn(300);
     }, 100);
-
-    // sliderText.eq(current).children[0].innerHTML = content[current].title;
-    // sliderText.eq(current).children[1].innerHTML = content[current].desc;
 }
 
 function changeActive(target) {
@@ -129,17 +93,17 @@ function initSlides() {
 // arrow mouse down ganti warna biar keren
 function arrowMouseDownEffect() {
     $('#arrow-left').on('mousedown touchstart', ()=> {
-        $('#arrow-left').css('background-color', '#1d757d');
+        $('#arrow-left').css('background-color', 'rgba(195, 195, 195, 1)');
     });
     $('#arrow-left').on('mouseup touchend', ()=> {
-        $('#arrow-left').css('background-color', '#87bcba');
+        $('#arrow-left').css('background-color', 'rgba(195, 195, 195, 0.8)');
     });
 
     $('#arrow-right').on('mousedown touchstart', ()=> {
-        $('#arrow-right').css('background-color', '#1d757d');
+        $('#arrow-right').css('background-color', 'rgba(195, 195, 195, 1)');
     });
     $('#arrow-right').on('mouseup touchend', ()=> {
-        $('#arrow-right').css('background-color', '#87bcba');
+        $('#arrow-right').css('background-color', 'rgba(195, 195, 195, 0.8)');
     });
 }
 

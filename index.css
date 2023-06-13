@@ -217,11 +217,13 @@ main.darken {
 
 #slider-text h2 {
     white-space: nowrap;
+    transition: ease-out;
 }
 
 #slider-text p {
     margin-top: 2rem;
     font-size: 1.2rem;
+    transition: ease-out;
 }
 
 #carousel-wrapper {
@@ -263,7 +265,8 @@ main.darken {
     height: 50px;
     width: 50px ;
     cursor: pointer;
-    background-color: #87bcba;
+    /* background-color: #87bcba; */
+    background-color: rgba(195, 195, 195, 0.8);
     border-radius: 50%;
     padding: 0.5rem;
     transition: 0.2s;
