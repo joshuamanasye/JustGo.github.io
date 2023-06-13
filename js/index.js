@@ -52,8 +52,8 @@ const reviews = [
     {
         name: "Joshua",
         photo: "./assets/review-photo/4.png",
-        comment: "Kelompok tidak ramah, bintang satu. Let me introduce you to my bois instead >"
-    },,
+        comment: "Kelompok lab tidak ramah, bintang satu. Let me introduce you to my bois instead >"
+    },
     {
         name: "Faegan",
         photo: "./assets/review-photo/5.png",
