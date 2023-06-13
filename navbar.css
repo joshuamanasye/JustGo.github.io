@@ -1,4 +1,5 @@
 * {
+    /* biar kalo di hp gk ad highlight pas pencet */
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -29,10 +30,18 @@ nav a, .sidebar a {
     transition: 0.2s;
 }
 
-nav a:hover, .sidebar a:hover {
-    text-decoration: none;
-    transform: scale(1.02);
-    color: #374d5c;
+@media (hover: hover) and (pointer: fine) {
+    nav a:hover, .sidebar a:hover {
+        text-decoration: none;
+        transform: scale(1.02);
+        color: #374d5c;
+    }
+
+    nav .current:hover {
+        transform: none;
+        cursor: default;
+        color: #3b474f;
+    }
 }
 
 nav p, .sidebar p {
@@ -45,12 +54,6 @@ nav .current {
     color: #3b474f;
     /* pointer-events: none; */
     /* cursor: default; */
-}
-
-nav .current:hover {
-    transform: none;
-    cursor: default;
-    color: #3b474f;
 }
 
 .left {
@@ -143,11 +146,13 @@ nav .current:hover {
     transition: 0.4s;
 }
 
-.dropdown-content a:hover {
-    text-decoration: none;
-    transform: none;
-    color: #fff;
-    background-color: #6ba19f;
+@media (hover: hover) and (pointer: fine) {
+    .dropdown-content a:hover {
+        text-decoration: none;
+        transform: none;
+        color: #fff;
+        background-color: #6ba19f;
+    }
 }
 
 .dropdown-icon {
@@ -184,14 +189,16 @@ nav .current:hover {
     width: 16px;
 }
 
-.hamburger-btn:hover .btn-line:nth-child(1) {
-    margin-left: 0;
-    width: 28px;
-}
-
-.hamburger-btn:hover .btn-line:nth-child(3) {
-    margin-left: 0;
-    width: 28px;
+@media (hover: hover) and (pointer: fine) {
+    .hamburger-btn:hover .btn-line:nth-child(1) {
+        margin-left: 0;
+        width: 28px;
+    }
+    
+    .hamburger-btn:hover .btn-line:nth-child(3) {
+        margin-left: 0;
+        width: 28px;
+    }
 }
 
 .hamburger-btn.close {

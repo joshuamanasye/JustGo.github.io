@@ -128,17 +128,17 @@ function initSlides() {
 
 // arrow mouse down ganti warna biar keren
 function arrowMouseDownEffect() {
-    $('#arrow-left').on('mousedown', ()=> {
+    $('#arrow-left').on('mousedown touchstart', ()=> {
         $('#arrow-left').css('background-color', '#1d757d');
     });
-    $('#arrow-left').on('mouseup', ()=> {
+    $('#arrow-left').on('mouseup touchend', ()=> {
         $('#arrow-left').css('background-color', '#87bcba');
     });
 
-    $('#arrow-right').on('mousedown', ()=> {
+    $('#arrow-right').on('mousedown touchstart', ()=> {
         $('#arrow-right').css('background-color', '#1d757d');
     });
-    $('#arrow-right').on('mouseup', ()=> {
+    $('#arrow-right').on('mouseup touchend', ()=> {
         $('#arrow-right').css('background-color', '#87bcba');
     });
 }
