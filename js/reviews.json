@@ -1,0 +1,37 @@
+[
+    {
+      "name": "Sarah",
+      "photo": "./assets/review-photo/1.png",
+      "comment": "Just Go has revolutionized the way I plan my backpacking trips. Highly recommended!"
+    },
+    {
+      "name": "Michael",
+      "photo": "./assets/review-photo/2.png",
+      "comment": "I can't imagine backpacking without Just Go anymore. It has truly enhanced my experiences."
+    },
+    {
+      "name": "Emily",
+      "photo": "./assets/review-photo/3.png",
+      "comment": "Just Go is a game-changer for solo travelers like me."
+    },
+    {
+      "name": "Joshua",
+      "photo": "./assets/review-photo/4.png",
+      "comment": "Kelompok lab tidak ramah, bintang satu. Let me introduce you to my bois instead >"
+    },
+    {
+      "name": "Faegan",
+      "photo": "./assets/review-photo/5.png",
+      "comment": "Bersatu tidak mungkin<br>Bercerai kita runtuh<br>Percuma saling yakin<br>Kalo ortu gk kasih izin"
+    },
+    {
+      "name": "Alex",
+      "photo": "./assets/review-photo/6.png",
+      "comment": "Dahla."
+    },
+    {
+      "name": "Mochi",
+      "photo": "./assets/review-photo/7.png",
+      "comment": "Aku suka Chitato."
+    }
+  ]

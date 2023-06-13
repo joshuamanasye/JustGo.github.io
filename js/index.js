@@ -31,47 +31,9 @@ function scrollNav() {
     }
 }
 
-// REVIEW
-// Reviews JSON data
-const reviews = [
-    {
-        name: "Sarah",
-        photo: "./assets/review-photo/1.png",
-        comment: "Just Go has revolutionized the way I plan my backpacking trips. Highly recommended!"
-    },
-    {
-        name: "Michael",
-        photo: "./assets/review-photo/2.png",
-        comment: "I can't imagine backpacking without Just Go anymore. It has truly enhanced my experiences."
-    },
-    {
-        name: "Emily",
-        photo: "./assets/review-photo/3.png",
-        comment: "Just Go is a game-changer for solo travelers like me."
-    },
-    {
-        name: "Joshua",
-        photo: "./assets/review-photo/4.png",
-        comment: "Kelompok lab tidak ramah, bintang satu. Let me introduce you to my bois instead >"
-    },
-    {
-        name: "Faegan",
-        photo: "./assets/review-photo/5.png",
-        comment: "Bersatu tidak mungkin<br>Bercerai kita runtuh<br>Percuma saling yakin<br>Kalo ortu gk kasih izin"
-    },
-    {
-        name: "Alex",
-        photo: "./assets/review-photo/6.png",
-        comment: "Dahla."
-    },
-    {
-        name: "Mochi",
-        photo: "./assets/review-photo/7.png",
-        comment: "Aku suka Chitato."
-    }
-];
-  
-// load review
+// REVIEWS
+var reviews = new Array();
+
 function loadReviews() {
     let reviewContainer = $('#review-container');
 
@@ -102,9 +64,19 @@ function loadReviews() {
     });
 }
 
+// load reviews
+function readReviews() {
+    fetch("./js/reviews.json").then((res) => {
+        return res.json();
+    }).then((data) => {
+        reviews = data;
+        // biar dia kelar baca dulu baru ngeload ke html
+        loadReviews();
+    });
+    
+}
+
 // grab ngescroll
-
-
 function reviewGrabListener() {
     let reviewContainer = document.getElementById("review-container");
     let isGrabbing = false;
@@ -145,7 +117,7 @@ window.onload = function() {
     reviewGrabListener();
 
     // review
-    loadReviews();
+    readReviews();
 
     //remove splash
     setTimeout(function() {
@@ -165,4 +137,4 @@ reviewContainer.bind("DOMMouseScroll mousewheel", function (event) {
     
     reviewContainer.scrollLeft(position);
     event.preventDefault();
-})
+});

@@ -145,10 +145,18 @@ function setListener() {
 }
 
 // pengen maki-maki kelompok gw di komen
-fetch("./js/slider-content.json").then((res) => {
-    return res.json();
-}).then((data) => {
-    content = data;
+function readContent() {
+    fetch("./js/slider-content.json").then((res) => {
+        return res.json();
+    }).then((data) => {
+        content = data;
+    });
+}
+
+function startSlider() {
+    readContent();
     initSlides();
     setListener();
-});
+}
+
+startSlider();
