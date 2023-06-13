@@ -52,7 +52,7 @@ const reviews = [
     {
         name: "Joshua",
         photo: "./assets/review-photo/4.png",
-        comment: "Kelompok tidak ramah, bintang satu."
+        comment: "Kelompok tidak ramah, bintang satu. Let me introduce you to my bois instead >"
     },,
     {
         name: "Faegan",
@@ -61,13 +61,13 @@ const reviews = [
     },
     {
         name: "Alex",
-        photo: "./assets/review-photo/0.png",
-        comment: "Dahla"
+        photo: "./assets/review-photo/6.png",
+        comment: "Dahla."
     },
     {
         name: "Mochi",
-        photo: "./assets/review-photo/0.png",
-        comment: "I ooga, therefore I booga"
+        photo: "./assets/review-photo/7.png",
+        comment: "Aku suka Chitato."
     }
 ];
   

@@ -27,19 +27,20 @@ nav a, .sidebar a {
     flex-wrap: nowrap;
     color: #767a7c;
     text-decoration: none;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 nav a:hover, .sidebar a:hover {
     text-decoration: none;
-    transform: scale(1.02);
+    transform: scale(1.01);
     color: #454a4e;
 }
 
-nav .current:hover {
+.current-page:hover a {
     transform: none;
     cursor: default;
     color: #454a4e;
+    pointer-events: none;
 }
 
 nav p, .sidebar p {
@@ -48,10 +49,11 @@ nav p, .sidebar p {
     white-space: nowrap;
 }
 
-nav .current {
-    color: #3b474f;
-    /* pointer-events: none; */
-    /* cursor: default; */
+.current-page a p {
+    color: rgb(48, 56, 62);
+    pointer-events: none;
+    cursor: default;
+    scale: 1.1;
 }
 
 .left {
@@ -72,7 +74,7 @@ nav .current {
 
 .nav-item {
     padding: 0 20px;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .dropdown-menu {
@@ -81,11 +83,11 @@ nav .current {
     flex-direction: column;
     color: #767a7c;
     text-decoration: none;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .dropdown-menu:hover label {
-    transform: scale(1.02);
+    transform: scale(1.01);
     color: #454a4e;
 }
 
@@ -98,7 +100,7 @@ nav .current {
 .dropdown-menu label:hover {
     cursor: pointer;
     text-decoration: none;
-    transform: scale(1.02);
+    transform: scale(1.01);
     color: #454a4e;
 }
 
@@ -271,7 +273,7 @@ nav .current {
     border-radius: 4px;
     padding: 5px 30px 5px 10px;
     margin: 2px 0;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .sidebar-dropdown-content a:hover {
