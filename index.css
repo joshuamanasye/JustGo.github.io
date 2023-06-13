@@ -200,7 +200,7 @@ main.darken {
 
 #slider-container {
     width: 100%;
-    background-image: linear-gradient(to bottom, rgba(11, 80, 84, 1), rgba(0, 0, 0, 0.4) 30%);
+    background-image: linear-gradient(to bottom, rgba(11, 80, 84, 1), rgba(0, 0, 0, 0.5) 30%);
     /* background-image: linear-gradient(to bottom, rgba(11, 80, 84, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 1)); */
     /* background-image: linear-gradient(to bottom, rgba(11, 80, 84, 1), rgba(251, 224, 194, 1), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(251, 224, 194, 1)); */
     display: flex;
@@ -211,12 +211,14 @@ main.darken {
 #slider-text {
     height: 16rem;
     margin-left: 5%;
-    width: 30%;
+    width: 25%;
+    min-width: 25%;
+    max-width: 25%;
     font-size: 1.4rem;
 }
 
 #slider-text h2 {
-    white-space: nowrap;
+    /* white-space: nowrap; */
     transition: ease-out;
 }
 
@@ -397,6 +399,7 @@ main.darken {
     #slider-text {
         margin-left: 0;
         width: 80%;
+        max-width: 100%;
         text-align: center;
     }
     
