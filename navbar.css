@@ -149,7 +149,7 @@ nav p, .sidebar p {
     transition: 0.2s;
 }
 
-.dropdown-content a:hover {
+.dropdown-content a:hover, .dropdown-content a.current-page {
     text-decoration: none;
     transform: none;
     color: #fff;
@@ -279,7 +279,7 @@ nav p, .sidebar p {
     transition: 0.4s;
 }
 
-.sidebar-dropdown-content a:hover {
+.sidebar-dropdown-content a:hover, .sidebar-dropdown-content a.current-page {
     text-decoration: none;
     transform: none;
     color: #fff;
@@ -309,4 +309,8 @@ main.darken {
     .nav-item {
         padding: 8px 5%;
     }
+}
+
+.current-page {
+    pointer-events: none;
 }
