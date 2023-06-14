@@ -462,10 +462,25 @@ main.darken {
     display: flex;
     flex-wrap: nowrap;
     overflow-x: auto;
-    scrollbar-width: auto;
+    scrollbar-width: 6px;
     scrollbar-color: #767a7c #f9f9f9;
     /* scroll-behavior: smooth; */
     cursor: grab;
+}
+
+/* KHUSUS BUAT CHROME DESKTOP TERCINTA :>> */
+#review-container::-webkit-scrollbar {
+    height: 2px;
+}
+
+#review-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#review-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1px;
+    border: transparent;
 }
 
 #review-container:active {

@@ -30,8 +30,7 @@ main {
     height: 100%;
     width: 300px;
     max-width: 30%;
-    background-color: #0b5054;
-    overflow-y: auto;
+    background-color: #454a4e;
     /* transform: translateX(-100%); */
 }
 
@@ -63,7 +62,49 @@ main {
 }
 
 #album-container {
+    height: 100%;
+    width: 100%;
+    padding-top: 60px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+.album {
+    margin: 20px 0;
+    aspect-ratio: 1/1 !important;
+    width: 90%;
+    background-image: url('./assets/gallery/asia/angkor-wat.jpg');
+    background-size: cover;
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.album-name {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+    opacity: 0;
+}
+
+.album.active .album-name {
+    opacity: 1;
+}
+
+.album.active h3 {
+    opacity: 1;
+}
+
+.album h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2em;
 }
 
 #gallery-view {

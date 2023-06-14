@@ -122,17 +122,3 @@ window.onload = function() {
     //remove splash
     $('#splash').fadeOut(200);
 }
-
-let reviewContainer = $('#review-container');
-reviewContainer.bind("DOMMouseScroll mousewheel", function (event) {
-    var oEvent = event.originalEvent;
-    // console.log(oEvent.detail);
-    var scroll = oEvent.detail;
-    var position = reviewContainer.scrollLeft();
-
-    if (scroll > 0) position += 120;
-    else position -= 120;
-    
-    reviewContainer.scrollLeft(position);
-    event.preventDefault();
-});
