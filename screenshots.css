@@ -26,16 +26,40 @@ main {
 }
 
 #gallery-nav {
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 300px;
     max-width: 30%;
     background-color: #0b5054;
-    transform: translateX(-100%);
+    overflow-y: auto;
+    /* transform: translateX(-100%); */
 }
 
 #gallery-nav::after {
     transition: 0.4s ease-out;
+}
+
+#gallery-nav-toggle {
+    z-index: 2;
+    height: 60px;
+    width: 60px;
+    border-style: none;
+    border-radius: 50%;
+    background-color: #e18616;
+    position: absolute;
+    top: 50vh;
+    left: -30px;
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+
+#gallery-nav-toggle:hover {
+    transform: scale(1.1);
+}
+
+#gallery-nav-toggle:active {
+    background-color: #f5c07f;
+    transform: scale(1);
 }
 
 #album-container {
