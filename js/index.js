@@ -120,9 +120,7 @@ window.onload = function() {
     readReviews();
 
     //remove splash
-    setTimeout(function() {
-        $('#splash').fadeOut();
-    }, 200);
+    $('#splash').fadeOut(200);
 }
 
 let reviewContainer = $('#review-container');

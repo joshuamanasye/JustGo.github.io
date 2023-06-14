@@ -17,16 +17,19 @@ nav {
     transition: 0.4s;
 }
 
-nav.solid {
-    background-color: #fff;
-    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-}
-
 nav a, .sidebar a {
     display: flex;
     flex-wrap: nowrap;
     color: #767a7c;
     text-decoration: none;
+}
+
+nav.solid {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+nav.solid::after {
     transition: 0.1s;
 }
 

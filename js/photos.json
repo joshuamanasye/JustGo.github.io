@@ -1,0 +1,122 @@
+[
+    {
+        "continent": "Asia",
+        "photos": [
+            {
+                "name": "Banana Reef",
+                "location": "Maldives",
+                "imgUrl": "./assets/gallery/asia/banana-reef.jpg"
+            },
+            {
+                "name": "Angkor Wat",
+                "location": "Cambodia",
+                "imgUrl": "./assets/gallery/asia/angkor-wat.jpg"
+            },
+            {
+                "name": "Tokyo Tower",
+                "location": "Japan",
+                "imgUrl": "./assets/gallery/asia/tokyo-tower.jpg"
+            }
+        ]
+    },
+    {
+        "continent": "Europe",
+        "photos": [
+            {
+                "name": "Eiffel Tower",
+                "location": "France",
+                "imgUrl": "./assets/gallery/europe/tokyo-tower.jpg"
+            },
+            {
+                "name": "Santorini",
+                "location": "Greece",
+                "imgUrl": "./assets/gallery/europe/santorini.jpg"
+            },
+            {
+                "name": "Colosseum",
+                "location": "Italy",
+                "imgUrl": "./assets/gallery/europe/colosseum.jpg"
+            }
+        ]
+    },
+    {
+        "continent": "North America",
+        "photos": [
+            {
+                "name": "Grand Canyon",
+                "location": "United States",
+                "imgUrl": "./assets/gallery/north-america/grand-canyon.jpg"
+            },
+            {
+                "name": "Niagara Falls",
+                "location": "Canada",
+                "imgUrl": "./assets/gallery/north-america/niagara-falls.jpg"
+            },
+            {
+                "name": "Chichen Itza",
+                "location": "Mexico",
+                "imgUrl": "./assets/gallery/north-america/chichen-itza.jpg"
+            }
+        ]
+    },
+    {
+        "continent": "South America",
+        "photos": [
+            {
+                "name": "Machu Picchu",
+                "location": "Peru",
+                "imgUrl": "./assets/gallery/south-america/machu-picchu.jpg"
+            },
+            {
+                "name": "Christ the Redeemer",
+                "location": "Brazil",
+                "imgUrl": "./assets/gallery/south-america/christ-the-redeemer.jpg"
+            },
+            {
+                "name": "Torres del Paine",
+                "location": "Chile",
+                "imgUrl": "./assets/gallery/south-america/torres-del-paine.jpg"
+            }
+        ]
+    },
+    {
+        "continent": "Africa",
+        "photos": [
+            {
+                "name": "Serengeti National Park",
+                "location": "Tanzania",
+                "imgUrl": "./assets/gallery/africa/serengeti-national-park.jpg"
+            },
+            {
+                "name": "Pyramids of Giza",
+                "location": "Egypt",
+                "imgUrl": "./assets/gallery/africa/pyramids-of-giza.jpg"
+            },
+            {
+                "name": "Table Mountain",
+                "location": "South Africa",
+                "imgUrl": "./assets/gallery/africa/table-mountain.jpg"
+            }
+        ]
+    },
+    {
+        "continent": "Oceania",
+        "photos": [
+            {
+                "name": "Great Barrier Reef",
+                "location": "Australia",
+                "imgUrl": "./assets/gallery/oceania/great-barrier-reef.jpg"
+            },
+            {
+                "name": "Milford Sound",
+                "location": "New Zealand",
+                "imgUrl": "./assets/gallery/oceania/milford-sound.jpg"
+            },
+            {
+                "name": "Bora Bora",
+                "location": "French Polynesia",
+                "imgUrl": "./assets/gallery/oceania/bora-bora.jpg"
+            }
+        ]
+    }
+]

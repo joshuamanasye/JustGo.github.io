@@ -35,7 +35,7 @@ section {
 /* splash */
 
 #splash {
-	z-index: 4;
+	z-index: 1;
 	position: fixed;
 	display: flex;
 	height: 100vh;
