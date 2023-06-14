@@ -16,6 +16,26 @@
                 "name": "Tokyo Tower",
                 "location": "Japan",
                 "imgUrl": "./assets/gallery/asia/tokyo-tower.jpg"
+            },
+            {
+                "name": "Taj Mahal",
+                "location": "India",
+                "imgUrl": "./assets/gallery/asia/taj-mahal.jpg"
+            },
+            {
+                "name": "Great Wall of China",
+                "location": "China",
+                "imgUrl": "./assets/gallery/asia/great-wall-of-china.jpg"
+            },
+            {
+                "name": "Petra",
+                "location": "Jordan",
+                "imgUrl": "./assets/gallery/asia/petra.jpg"
+            },
+            {
+                "name": "Borobudur",
+                "location": "Indonesia",
+                "imgUrl": "./assets/gallery/asia/borobudur.jpg"
             }
         ]
     },
@@ -25,7 +45,7 @@
             {
                 "name": "Eiffel Tower",
                 "location": "France",
-                "imgUrl": "./assets/gallery/europe/tokyo-tower.jpg"
+                "imgUrl": "./assets/gallery/europe/eiffel-tower.jpg"
             },
             {
                 "name": "Santorini",
@@ -36,6 +56,16 @@
                 "name": "Colosseum",
                 "location": "Italy",
                 "imgUrl": "./assets/gallery/europe/colosseum.jpg"
+            },
+            {
+                "name": "Neuschwanstein Castle",
+                "location": "Germany",
+                "imgUrl": "./assets/gallery/europe/neuschwanstein-castle.jpg"
+            },
+            {
+                "name": "Dubrovnik",
+                "location": "Croatia",
+                "imgUrl": "./assets/gallery/europe/dubrovnik.jpg"
             }
         ]
     },
@@ -56,6 +86,16 @@
                 "name": "Chichen Itza",
                 "location": "Mexico",
                 "imgUrl": "./assets/gallery/north-america/chichen-itza.jpg"
+            },
+            {
+                "name": "Yosemite National Park",
+                "location": "United States",
+                "imgUrl": "./assets/gallery/north-america/yosemite-national-park.jpg"
+            },
+            {
+                "name": "Banff National Park",
+                "location": "Canada",
+                "imgUrl": "./assets/gallery/north-america/banff-national-park.jpg"
             }
         ]
     },
@@ -76,6 +116,16 @@
                 "name": "Torres del Paine",
                 "location": "Chile",
                 "imgUrl": "./assets/gallery/south-america/torres-del-paine.jpg"
+            },
+            {
+                "name": "Iguazu Falls",
+                "location": "Argentina",
+                "imgUrl": "./assets/gallery/south-america/iguazu-falls.jpg"
+            },
+            {
+                "name": "Galapagos Islands",
+                "location": "Ecuador",
+                "imgUrl": "./assets/gallery/south-america/galapagos-islands.jpg"
             }
         ]
     },
@@ -96,6 +146,16 @@
                 "name": "Table Mountain",
                 "location": "South Africa",
                 "imgUrl": "./assets/gallery/africa/table-mountain.jpg"
+            },
+            {
+                "name": "Victoria Falls",
+                "location": "Zimbabwe",
+                "imgUrl": "./assets/gallery/africa/victoria-falls.jpg"
+            },
+            {
+                "name": "Mount Kilimanjaro",
+                "location": "Tanzania",
+                "imgUrl": "./assets/gallery/africa/mount-kilimanjaro.jpg"
             }
         ]
     },
@@ -116,6 +176,16 @@
                 "name": "Bora Bora",
                 "location": "French Polynesia",
                 "imgUrl": "./assets/gallery/oceania/bora-bora.jpg"
+            },
+            {
+                "name": "Uluru",
+                "location": "Australia",
+                "imgUrl": "./assets/gallery/oceania/uluru.jpg"
+            },
+            {
+                "name": "Kangaroo Island",
+                "location": "Australia",
+                "imgUrl": "./assets/gallery/oceania/kangaroo-island.jpg"
             }
         ]
     }

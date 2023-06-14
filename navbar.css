@@ -286,6 +286,11 @@ nav p, .sidebar p {
     background-color: #6ba19f;
 }
 
+main.darken {
+    filter: brightness(60%);
+    pointer-events: none;
+}
+
 @media only screen and (max-width: 1000px) {
     nav {
         padding: 0 10px;
@@ -305,5 +310,3 @@ nav p, .sidebar p {
         padding: 8px 5%;
     }
 }
-
-/* kpn lg css navbar sampe 269 line ygy, mana bikin sendiri krn klompok afk */

@@ -1,4 +1,3 @@
-/* global styles */
 html {
 	scroll-behavior: smooth;
 }
@@ -78,13 +77,6 @@ section {
 	100% {
 		transform: scale(1);
 	}
-}
-
-/* main */
-
-main.darken {
-    filter: brightness(60%);
-    pointer-events: none;
 }
 
 /* welcome */

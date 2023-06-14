@@ -1,4 +1,3 @@
-/* global styles */
 html {
 	scroll-behavior: smooth;
 }
@@ -11,17 +10,19 @@ html {
 }
 
 body {
+    /* overflow-x: hidden; */
     font-size: 16px;
     line-height: 1.5;
     margin: 0;
     position: relative;
-    background: linear-gradient(-120deg, #9ec9c7 0%, #9ec9c7 40%, transparent 40%);
+    background-color: #fff;
+    /* background: linear-gradient(-120deg, #9ec9c7 0%, #9ec9c7 40%, transparent 40%); */
 }
 
 main {
     display: flex;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
 }
 
@@ -30,12 +31,34 @@ main {
     height: 100%;
     width: 300px;
     max-width: 30%;
-    background-color: #454a4e;
-    /* transform: translateX(-100%); */
+    background-color: #87bcba;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    transition: 0.4s ease-out;
 }
 
-#gallery-nav::after {
-    transition: 0.4s ease-out;
+#gallery-nav.closed {
+    display: none;
+}
+
+#album-container-wrapper {
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+/* KHUSUS BUAT CHROME DESKTOP TERCINTA :>> */
+#album-container-wrapper::-webkit-scrollbar {
+    width: 4px;
+}
+
+#album-container-wrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#album-container-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    border: transparent;
 }
 
 #gallery-nav-toggle {
@@ -45,6 +68,7 @@ main {
     border-style: none;
     border-radius: 50%;
     background-color: #e18616;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
     position: absolute;
     top: 50vh;
     left: -30px;
@@ -62,27 +86,34 @@ main {
 }
 
 #album-container {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     padding-top: 60px;
-    position: relative;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-    overflow-y: scroll;
 }
 
 .album {
-    margin: 20px 0;
+    margin: 5% 0 5% 30px;
     aspect-ratio: 1/1 !important;
-    width: 90%;
-    background-image: url('./assets/gallery/asia/angkor-wat.jpg');
-    background-size: cover;
+    width: 60%;
     border-radius: 10%;
     overflow: hidden;
+    cursor: pointer;
+    position: relative;
+}
+
+.album-cover {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .album-name {
+    z-index: 1;
     height: 100%;
     width: 100%;
     display: flex;
@@ -91,67 +122,144 @@ main {
     background-color: rgba(0, 0, 0, 0.6);
     transition: 0.4s;
     opacity: 0;
+    position: absolute;
+    top: 0;
 }
 
-.album.active .album-name {
+.album-name h3 {
+    text-align: center;
+}
+
+.album.active .album-name, .album:hover .album-name {
     opacity: 1;
 }
 
-.album.active h3 {
-    opacity: 1;
+.album.active {
+    pointer-events: none;
 }
 
 .album h3 {
     text-transform: uppercase;
     color: #fff;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #gallery-view {
     margin-top: 60px;
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    /* height: 100%; */
+    max-height: calc(100% - 60px);
+    height: fit-content;
     width: 100%;
-    padding: 10px;
+    padding: 4px;
     overflow-y: auto;
+    transition: 0.4s ease-out;
 }
 
 .photo {
-    width: 100%;
-    padding: 10px;
+    aspect-ratio: 1 / 1;
+    width: calc(100% / 3);
+    padding: 0 2px;
     box-sizing: border-box;
 }
 
 .photo img {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
     width: 100%;
-    height: auto;
     cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .photo-details {
     position: fixed;
-    top: 50%;
+    top: calc(50% + 30px);
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 2;
+    /* width: auto; */
+    max-height: 90vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+  
 .photo-details img {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
+    max-height: 65vh;
+    object-fit: cover;
     margin-bottom: 10px;
 }
-
+  
 .photo-details h3 {
     margin: 0;
     font-size: 1.5rem;
 }
-
+  
 .photo-details p {
     margin: 0;
     font-size: 1rem;
     color: #888;
+}
+  
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border: none;
+    background-color: #f5c07f;
+    color: #fff;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.close-btn img {
+    margin: 0;
+    height: 32px;
+    width: 32px;
+}
+
+@media screen and (max-width: 800px) {
+    .album h3 {
+        font-size: 1em;
+    }
+
+    .photo-details {
+        width: 90%;
+    }
+
+    .close-btn img {
+        height: 24px;
+        width: 24px;
+    }
+  
+    .photo-details h3 {
+        font-size: 1.2rem;
+    }
+      
+    .photo-details p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #gallery-nav-toggle {
+        height: 48px;
+        width: 48px;
+    }
+
+    .album {
+        margin-left: 24px;
+    }
+
+    .album h3 {
+        font-size: 0.6em;
+    }
 }

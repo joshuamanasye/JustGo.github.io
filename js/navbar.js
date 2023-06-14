@@ -89,7 +89,7 @@ window.onclick = function(event) {
         if (!dropdown.contains(event.target)) closeDropdown(dropdown);
     });
 
-    if (!sideBar.contains(event.target) && !nav.contains(event.target) && event.target !== sideBar) closeSideBar();
+    if (sideBarOpened && !sideBar.contains(event.target) && !nav.contains(event.target) && event.target !== sideBar) closeSideBar();
     // console.log(!sideBar.contains(event.target));
     // console.log(!nav.contains(event.target));
     // console.log(event.target !== sideBar);
