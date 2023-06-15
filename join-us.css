@@ -19,13 +19,21 @@ body {
 	justify-content: center;
 }
 
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .green-text {
 	color: #1d757d;
     white-space: nowrap;
 }
 
 .login-form-container {
-    width: 400px;
+    width: 500px;
 	max-width: 90%;
 	margin: 100px 0 100px 0;
 	text-align: center;
