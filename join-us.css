@@ -1,0 +1,119 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.green-text {
+	color: #1d757d;
+    white-space: nowrap;
+}
+
+.login-form-container {
+    width: 400px;
+	max-width: 90%;
+	margin: 100px 0 100px 0;
+	text-align: center;
+	padding: 40px;
+	background-color: #fff;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+
+.form-logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-logo-container h1 {
+    font-weight: 720;
+    letter-spacing: 0px;
+}
+
+h1 {
+	margin-top: 0;
+	font-size: 3rem;
+	color: #283035;
+	letter-spacing: 5px;
+}
+
+.form-logo {
+	height: 4rem;
+}
+
+h2 {
+	font-size: 2rem;
+	color: #283035;
+	margin-bottom: 30px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+}
+
+#form label {
+	align-self: flex-start;
+	font-size: 1.2rem;
+	color: #283035;
+	margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+	font-size: 1rem;
+	padding: 10px;
+	border: none;
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+button[type="submit"] {
+	background-color: #283035;
+	color: #fff;
+	font-size: 1.2rem;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+	background-color: #e18616;
+}
+
+.login-form-container p {
+	font-size: 1.1rem;
+	color: #666;
+	margin-top: 20px;
+}
+
+a {
+	color: #283035;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}

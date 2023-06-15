@@ -15,6 +15,7 @@ nav {
     background-color: none;
     box-shadow: none;
     transition: 0.4s;
+    top: 0;
 }
 
 nav a, .sidebar a {

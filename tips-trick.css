@@ -1,0 +1,67 @@
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    position: relative;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    position: relative;
+    background-color: #e18616;
+}
+
+.information {
+    margin: 80px 0 50px;
+    padding: 5%;
+}
+
+.information-name {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.tip-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tip-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    background-color: #fff;
+}
+
+.tip-item img {
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+}
+
+.tip-details {
+    flex: 1;
+}
+
+.tip-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.tip-description {
+    font-size: 16px;
+    line-height: 1.5;
+}

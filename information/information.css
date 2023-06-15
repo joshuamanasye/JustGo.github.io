@@ -22,10 +22,11 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #e18616;
     color: #fff;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -40,31 +41,46 @@ main {
 .information {
     margin-bottom: 40px;
     background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     overflow: hidden;
+    position: relative;
 }
 
 .information-name {
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 10px;
     padding: 20px;
-    background-color: #333;
+    background-color: #f5c07f;
     color: #fff;
 }
 
 .information-image {
     width: 100%;
-    height: auto;
+    height: 100%;
+    max-height: 600px;
+    object-fit: cover;
 }
 
 .information-description {
-    padding: 20px;
+    bottom: 10px;
+    padding: 10px;
     color: #333;
+    font-size: 24px;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .information-description {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 800px) {
     .information {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -81,6 +97,8 @@ main {
     }
 
     .information-description {
+        width: 35%;
+        position: absolute;
         padding: 20px 40px 20px 20px;
     }
 }

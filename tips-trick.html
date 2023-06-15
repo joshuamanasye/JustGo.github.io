@@ -4,10 +4,10 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>JustGo - Screenshots</title>
+		<title>Tips and Tricks for Begginer Backpackers</title>
         <link rel="icon" href="assets/logo.png">
+		<link rel="stylesheet" href="tips-trick.css">
 		<link rel="stylesheet" href="navbar.css">
-        <link rel="stylesheet" href="screenshots.css">
 		<link rel="stylesheet" href="footer.css">
 	</head>
 	<body>
@@ -20,12 +20,12 @@
             </div>
     
             <div class="middle">
-                <div class="nav-item">
+                <div class="nav-item current-page">
                     <a href="index.html">
                         <p>Home</p>
                     </a>
                 </div>
-                <div class="nav-item current-page">
+                <div class="nav-item">
                     <a href="screenshots.html">
                         <p>Screenshots</p>
                     </a>
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="nav-item">
+                <div class="nav-item current-page">
                     <a href="tips-trick.html">
                         <p>Tips and Trick</p>
                     </a>
@@ -62,12 +62,12 @@
             </div>
         </nav>
         <div class="sidebar ">
-            <div class="nav-item">
+            <div class="nav-item current-page">
                 <a href="index.html">
                     <p>Home</p>
                 </a>
             </div>
-            <div class="nav-item current-page">
+            <div class="nav-item">
                 <a href="screenshots.html">
                     <p>Screenshots</p>
                 </a>
@@ -82,7 +82,7 @@
                     </div>
                 </div>
             </div>
-            <div class="nav-item">
+            <div class="nav-item current-page">
                 <a href="tips-trick.html">
                     <p>Tips and Trick</p>
                 </a>
@@ -96,24 +96,55 @@
         
         <!-- MAIN -->
 		<main>
-            <div id="gallery-nav-toggle">
-
+            <div class="information">
+                <h2 class="information-name">Essential Items for Beginner Backpackers</h2>
+                <ul class="tip-list">
+                    <li class="tip-item">
+                        <img src="../assets/tip-icons/compass.svg" alt="Compass Icon">
+                        <div class="tip-details">
+                            <h3 class="tip-title">Compass</h3>
+                            <p class="tip-description">
+                                A compass is crucial for navigation, especially when exploring unfamiliar trails and wilderness areas. It helps
+                                you stay on the right path and find your way back if you get lost.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="tip-item">
+                        <img src="../assets/tip-icons/sleeping-bag.svg" alt="Sleeping Bag Icon">
+                        <div class="tip-details">
+                            <h3 class="tip-title">Sleeping Bag</h3>
+                            <p class="tip-description">
+                                A high-quality sleeping bag is essential for a comfortable night's sleep during camping or backpacking trips.
+                                Choose a lightweight and compact sleeping bag suitable for the climate and temperature of your destination.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="tip-item">
+                        <img src="../assets/tip-icons/water-bottle.svg" alt="Water Bottle Icon">
+                        <div class="tip-details">
+                            <h3 class="tip-title">Water Bottle</h3>
+                            <p class="tip-description">
+                                Staying hydrated is crucial while backpacking. Carry a durable and reusable water bottle to ensure you have
+                                access to clean drinking water throughout your journey.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="tip-item">
+                        <img src="../assets/tip-icons/first-aid-kit.svg" alt="First Aid Kit Icon">
+                        <div class="tip-details">
+                            <h3 class="tip-title">First Aid Kit</h3>
+                            <p class="tip-description">
+                                A compact first aid kit is essential to handle minor injuries and medical emergencies. Include items like
+                                bandages, antiseptic wipes, pain relievers, and any necessary personal medications.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div id="gallery-nav">
-                <div id="album-container-wrapper">
-                    <div id="album-container">
-                        <!-- isi pake js -->
-                    </div>
-                </div>
-            </div>
-            <div id="gallery-view">
-                
-            </div>
-		</main>
+        </main>
 
 		<footer>
 			<p>© 2023 JustGo. All rights reserved | Powered by caffein</p>
-            <!-- except human rights of my group -->
             <div class="social-icons">
                 <a href="https://github.com/joshuamanasye" target="_blank">
                     <img src="./assets/social-icon/icons8-github-36.svg" alt="">
@@ -132,6 +163,6 @@
 
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/navbar.js" defer></script>
-        <script src="js/gallery.js"></script>
+        <script src="js/carousel.js" defer></script>
 	</body>
 </html>
